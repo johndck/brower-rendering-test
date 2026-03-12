@@ -1,1 +1,4 @@
-console.log("Hello World"); 
+import 'dotenv/config'
+
+const key = process.env.mykey
+console.log(key)
