@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import Cloudflare from 'cloudflare';
 import debugWithScreenshot from './testScreenShot.js';
+import runTest from './firecrawl.js';
 
 
 
@@ -9,7 +10,8 @@ const client = new Cloudflare({
   apiToken: process.env.CLOUDFLARE_API_TOKEN,
 });
 
-debugWithScreenshot(client, 'https://standardlife.com');    
+//debugWithScreenshot(client, 'https://standardlife.com');    
+await runTest();
 
 
 /** 

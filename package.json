@@ -12,6 +12,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.30.1",
   "dependencies": {
+    "@mendable/firecrawl-js": "^4.16.0",
     "cloudflare": "^5.2.0",
     "dotenv": "^17.3.1"
   }
