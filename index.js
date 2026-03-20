@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import Cloudflare from 'cloudflare';
+import debugWithScreenshot from './testScreenShot.js';
 
 
 
@@ -8,6 +9,10 @@ const client = new Cloudflare({
   apiToken: process.env.CLOUDFLARE_API_TOKEN,
 });
 
+debugWithScreenshot(client, 'https://standardlife.com');    
+
+
+/** 
 async function extractMarkdown(targetUrl) {
   try {
     console.log(`🚀 Rendering ${targetUrl}...`);
@@ -36,3 +41,5 @@ async function extractMarkdown(targetUrl) {
 }
 
 extractMarkdown('https://standardlife.com');
+
+*/
